@@ -15,13 +15,20 @@ To run the application on your local machine without using Docker or Kubernetes,
 
 ### Steps
 
-1. **Start MongoDB:**
+1. **Clone the Repository:**
+    - Run the following command in your terminal:
+        ```bash
+        git clone https://github.com/Muhammad-Zeeshan10/SCD_PROJECT.git
+        cd SCD_PROJECT
+        ```
+
+2. **Start MongoDB:**
     - Ensure MongoDB is running on your local machine. You can start the MongoDB server by opening a terminal and running:
         ```bash
         mongod
         ```
 
-2. **Start the Backend:**
+3. **Start the Backend:**
     - Open a terminal and navigate to the `Backend` directory:
         ```bash
         cd app
@@ -37,7 +44,7 @@ To run the application on your local machine without using Docker or Kubernetes,
         ```
         > Note: If `npm start` is not defined in the `package.json` file, use `node server.js` instead. Check the `package.json` "scripts" section for the exact command.
 
-3. **Start the Frontend:**
+4. **Start the Frontend:**
     - Open a new terminal and navigate to the `frontend` directory:
         ```bash
         cd frontend
@@ -51,6 +58,6 @@ To run the application on your local machine without using Docker or Kubernetes,
         npm start
         ```
 
-4. **Access the Application:**
+5. **Access the Application:**
     - Once both the backend and frontend are running, open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
     - The frontend communicates with the backend API, which runs at [http://localhost:5000](http://localhost:5000).
