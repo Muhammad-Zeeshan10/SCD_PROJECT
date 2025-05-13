@@ -40,14 +40,14 @@ jobs:
 
       - name: Deploy Server to Minikube
         run: |
-          kubectl apply -f k8s/server-deployment.yaml
-          kubectl apply -f k8s/server-service.yaml
+          kubectl apply -f deployment.yaml
+          kubectl apply -f service.yaml
         env:
           KUBECONFIG: ${{ secrets.KUBECONFIG }}
 
       - name: Deploy Frontend to Minikube
         run: |
-          kubectl apply -f k8s/deployment.yaml
-          kubectl apply -f k8s/service.yaml
+          kubectl apply -f deployment.yaml
+          kubectl apply -f service.yaml
         env:
-          KUBECONFIG: ${{ secrets.KUBECONFIG }}
+          KUBECONFIG: ${{ secrets.KUBECONFIG }}
